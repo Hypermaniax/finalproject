@@ -7,10 +7,10 @@
 body{
   background-color: var(--color1);
 }
+/* ini untuk menyesesuaikan ukuran buat bukak di hp */
 @media (min-width: 576px) {
   .container  {
       max-width:540px;
-      background-color:tomato;
   }
 }
 
@@ -38,11 +38,17 @@ body{
   }
 }
 
+
+
 @media (min-width: 992px) {
   .about-area .container .align .col-lg-6 {
       flex: 0 0 auto;
       width: 50%;
   }
+  .col-lg-4 {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+}
 }
 
 
@@ -87,6 +93,9 @@ i{
   padding: 8px 0 10px 0;
   background-color: var(--color3);
   box-sizing: inherit;
+  position: sticky;
+  top: 0;
+  scroll-behavior: smooth;
 }
 .header-navbar .container .logo img{
   max-width: 100px;
@@ -122,8 +131,6 @@ i{
   padding: 120px 0; 
 }
 .about-area .container .align {
-  display: flex;
-  margin: auto;
   align-items: center;
 }
 .about-area .container .col-lg-6 img{
@@ -144,4 +151,12 @@ i{
 .about-area .container .col-lg-6 .about-right .desc{
   font-size: 18px;
   font-weight: 500px;
+}
+
+
+
+/* carosel */
+.carousel-item img{
+  height: 500px;
+  width: 100%;
 }
