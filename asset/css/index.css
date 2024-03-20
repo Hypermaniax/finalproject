@@ -11,7 +11,6 @@ body{
 @media (min-width: 576px) {
   .container  {
       max-width:540px;
-
   }
 }
 
@@ -178,13 +177,22 @@ i{
   background-color: var(--color2);
   box-shadow: 10px 10px 5px #aaaaaa;
 }
+.card ul li i{
+  color: var(--color3);
+}
 .jeephead{
   text-align: center;
-  font-family: "Road Rage", sans-serif !important;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  line-height: 2em;
+  color: var(--color3);
+  font-weight: bolder;
+}
+.jeephead span{
+  font-size: 18px;
 }
 .headline h2{
   font-family: "Road Rage", sans-serif;
   font-size: 70px;
   color: var(--color3);
-  font-weight: 500px;
 }
